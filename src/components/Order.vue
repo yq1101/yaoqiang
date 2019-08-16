@@ -330,7 +330,8 @@
                         // console.log(add.data)
                         this.orders=add.data
                         var token=localStorage.getItem("token")
-                        location.href="http://localhost/laravel/public/api/pay/index?token="+token+"&oid="+this.orders
+                        location.href="/pay/index?token="+token+"&oid="+this.orders
+                        // http://localhost/laravel/public/apithis.url+
                     })
             }
         },
